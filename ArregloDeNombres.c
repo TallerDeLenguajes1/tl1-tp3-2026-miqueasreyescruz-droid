@@ -19,6 +19,7 @@ int main () {
     }
 
     MostrarPersonas(V);
+    BuscarNombre(V,6);
 
     for (int i = 0; i < MAX; i++)
     {
@@ -39,7 +40,7 @@ void MostrarPersonas (char *V[]) {
 void BuscarNombre (char *V[], int id) {
     int aux;
     aux = id - 1;
-    if (aux < 0 || aux > 5)
+    if (aux < 0 || aux > 4)
     {
         printf("-->No se encontro el valor buscado");
     }
