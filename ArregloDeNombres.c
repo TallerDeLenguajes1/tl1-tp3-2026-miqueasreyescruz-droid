@@ -4,6 +4,7 @@
 #define MAX 5
 
 void MostrarPersonas (char *V[]);
+char* BuscarNombre (char *V[], char *pclave);
 
 int main () {
     char *V[5], buffer[50];
@@ -33,4 +34,16 @@ void MostrarPersonas (char *V[]) {
     {
         printf("-%s\n", V[i]);
     }
+}
+
+char* BuscarNombre (char *V[], char *pclave) {
+    for (int i = 0; i < 5; i++)
+    {
+        if (strstr(V[i],pclave) != NULL)
+        {
+            return V[i];
+        }
+    }
+
+    return "-1";
 }
