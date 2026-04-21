@@ -35,4 +35,4 @@ El programa presenta un menú interactivo con las siguientes opciones:
 
 ---
 *Desarrollado como ejercicio de manipulación de cadenas y punteros en C.*
-*Archivo README.md redactado por IA (gracias por todo chat gpt, y perdon por tan poco...)*
+*Archivo README.md redactado por IA (gracias por todo chat gpt, y perdon por tan poco...).*
