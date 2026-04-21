@@ -34,5 +34,4 @@ El programa presenta un menú interactivo con las siguientes opciones:
 4. Al salir (opción 3), el programa limpia la memoria automáticamente.
 
 ---
-*Desarrollado como ejercicio de manipulación de cadenas y punteros en C.*
 *Archivo README.md redactado por IA (gracias por todo chat gpt, y perdon por tan poco...).*
