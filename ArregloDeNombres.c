@@ -4,7 +4,8 @@
 #define MAX 5
 
 void MostrarPersonas (char *V[]);
-char* BuscarNombre (char *V[], char *pclave);
+char* BuscarNombrePorClave (char *V[], char *pclave);
+void BuscarNombrePorId (char *V[], int id);
 
 int main () {
     char *V[5], buffer[50];
@@ -36,7 +37,7 @@ void MostrarPersonas (char *V[]) {
     }
 }
 
-char* BuscarNombre (char *V[], char *pclave) {
+char* BuscarNombrePorClave (char *V[], char *pclave) {
     for (int i = 0; i < 5; i++)
     {
         if (strstr(V[i],pclave) != NULL)
@@ -46,4 +47,17 @@ char* BuscarNombre (char *V[], char *pclave) {
     }
 
     return "-1";
+}
+
+void BuscarNombrePorId (char *V[], int id) {
+    int aux;
+    aux = id - 1;
+    if (aux < 0 || aux > 4)
+    {
+        printf("-->No se encontro el valor buscado");
+    }
+    else
+    {
+        printf("-->Nombre %d solicitado: %s\n",id,V[aux]);
+    }
 }
