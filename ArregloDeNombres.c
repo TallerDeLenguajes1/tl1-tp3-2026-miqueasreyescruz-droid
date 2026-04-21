@@ -4,6 +4,7 @@
 #define MAX 5
 
 void MostrarPersonas (char *V[]);
+void BuscarNombre (char *V[], int id);
 
 int main () {
     char *V[5], buffer[50];
@@ -32,5 +33,18 @@ void MostrarPersonas (char *V[]) {
     for (int i = 0; i < MAX; i++)
     {
         printf("-%s\n", V[i]);
+    }
+}
+
+void BuscarNombre (char *V[], int id) {
+    int aux;
+    aux = id - 1;
+    if (aux < 0 || aux > 5)
+    {
+        printf("-->No se encontro el valor buscado");
+    }
+    else
+    {
+        printf("-->Nombre %d solicitado: %s\n",id,V[aux]);
     }
 }
